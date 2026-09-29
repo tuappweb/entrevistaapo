@@ -55,12 +55,6 @@
       allow="fullscreen"
     ></iframe>
   </div>
-
-  <!-- Botón real, en vez de intentarlo solo al cargar: los navegadores
-       exigen un toque/clic genuino de la persona para conceder pantalla
-       completa — un intento automático en window.onload siempre falla. -->
-  <button id="btnPantallaCompleta" onclick="entrarPantallaCompleta()">⛶ Pantalla completa</button>
-
   <script>
     function entrarPantallaCompleta() {
       const iframe = document.getElementById('miIframe');
